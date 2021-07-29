@@ -1,0 +1,15 @@
+@import "./../../scss//global.scss";
+.wrapper {
+  background-color: $color-first;
+  .container {
+    @include container;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  h2 {
+    @include header;
+    @include media-query("max", $palm-start) {
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "./../../scss//global.scss";
+.container {
+  max-width: $page-width;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0.5rem 0.9rem;
+  @include media-query("max", $lap-start) {
+    justify-content: center;
+  }
+
+  .navLinks {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+
+    @include media-query("max", $lap-start) {
+      justify-content: space-between;
+      width: 95%;
+      flex-wrap: wrap;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    transition: 0.3s ease 0s;
+    font-size: 1.6rem;
+    color: $color-body;
+    @include media-query("max", $palm-start) {
+      font-size: 1.4rem;
+    }
+  }
+}

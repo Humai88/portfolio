@@ -1,0 +1,29 @@
+@import "./../../scss//global.scss";
+.wrapper {
+  color: $color-body;
+  margin-bottom: 7rem;
+  max-width: 23rem;
+  background-color: $color-first;
+
+  .box {
+    width: 21rem;
+    height: 21rem;
+    background-color: $color-fourth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media-query("max", $mob-start) {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+  .btn {
+    display: inline-block;
+  }
+  .title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

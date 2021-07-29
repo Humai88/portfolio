@@ -1,0 +1,62 @@
+@import "./../../scss//global.scss";
+.wrapper {
+  background-color: $color-first;
+
+  .container {
+    @include container;
+    color: $color-fourth;
+    justify-content: space-around;
+    padding: 6% 0;
+    flex-wrap: wrap;
+    @include media-query("max", $mob-start) {
+      padding: 4% 0;
+    }
+  }
+  .descrWrapper {
+    margin-top: 14rem;
+    @include media-query("max", $palm-start) {
+      margin-top: 6rem;
+    }
+  }
+  .subheader {
+    font-size: 1.5rem;
+    @include media-query("max", $palm-start) {
+      font-size: 1.3rem;
+    }
+  }
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    @include media-query("max", $palm-start) {
+      font-size: 2.3rem;
+    }
+  }
+  .descr {
+    font-size: 2rem;
+    font-weight: 500;
+    @include media-query("max", $palm-start) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .img {
+    width: 21rem;
+    height: 28rem;
+    background-color: $color-fourth;
+    margin: 5rem 0;
+    @include media-query("max", $palm-start) {
+      width: 16rem;
+      height: 22rem;
+    }
+  }
+}
+
+// @include media-query("min", $palm-start) {
+
+// }
+// @include media-query("min", $lap-start) {
+// }
+// @include media-query("min", $desk-start) {
+// }
+// @include media-query("min", $wide-start) {
+// }

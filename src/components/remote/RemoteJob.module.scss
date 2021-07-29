@@ -1,0 +1,23 @@
+@import "./../../scss//global.scss";
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-second;
+  color: $color-fourth;
+  .btn {
+    color: $color-fourth;
+    border: 1px solid $color-fourth;
+    margin-bottom: 5rem;
+    padding: 11px 44px;
+  }
+  h3 {
+    @include header;
+    font-size: 2.8rem;
+    margin-bottom: -2rem;
+    @include media-query("max", $palm-start) {
+      font-size: 2.4rem;
+    }
+  }
+}
