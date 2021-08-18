@@ -2,9 +2,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 33%;
   margin: 0 auto;
-  @include media-query("max", $desk-start) {
+  @include media-query("max", 1025px) {
     width: 70%;
   }
 
@@ -15,5 +15,8 @@
   textarea {
     height: 10rem;
     margin-bottom: 3rem;
+    @include media-query("max", $palm-start) {
+      height: 7rem;
+    }
   }
 }

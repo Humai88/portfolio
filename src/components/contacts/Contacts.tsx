@@ -5,7 +5,7 @@ import Button from "../../UI/Button/Button";
 
 export const Contacts = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="contacts" className={styles.wrapper}>
       <h2>Contact</h2>
       <Form />
       <Button className={styles.btn}>send message</Button>

@@ -3,7 +3,9 @@
   color: $color-fourth;
   margin-bottom: 7rem;
   max-width: 21rem;
-
+  @include media-query("max", $palm-start) {
+    margin-bottom: 5rem;
+  }
   .img {
     width: 7rem;
     height: 7rem;

@@ -16,8 +16,8 @@ function App() {
         <SkillsSection />
         <WorksSection />
         <RemoteJob />
+        <Contacts />
       </div>
-      <Contacts />
       <Footer />
     </div>
   );

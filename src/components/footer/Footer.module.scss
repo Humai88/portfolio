@@ -12,6 +12,7 @@
     font-weight: 500;
     @include media-query("max", $palm-start) {
       font-size: 1.4rem;
+      margin-top: 2rem;
     }
   }
   .links {

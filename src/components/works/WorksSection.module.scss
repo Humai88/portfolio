@@ -5,11 +5,13 @@
     @include container;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 2rem;
   }
   h2 {
     @include header;
     @include media-query("max", $palm-start) {
       font-size: 2.4rem;
+      padding: 4rem 0 3rem 0;
     }
   }
 }

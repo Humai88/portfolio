@@ -4,6 +4,9 @@
   margin-bottom: 7rem;
   max-width: 23rem;
   background-color: $color-first;
+  @include media-query("max", $palm-start) {
+    margin-bottom: 5rem;
+  }
 
   .box {
     width: 21rem;

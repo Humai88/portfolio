@@ -1,34 +1,179 @@
 @import "./../../scss//global.scss";
-.container {
-  max-width: $page-width;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  padding: 0.5rem 0.9rem;
-  @include media-query("max", $lap-start) {
-    justify-content: center;
-  }
 
-  .navLinks {
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-
-    @include media-query("max", $lap-start) {
-      justify-content: space-between;
-      width: 95%;
-      flex-wrap: wrap;
-    }
-  }
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
 
   a {
-    font-weight: 400;
-    transition: 0.3s ease 0s;
-    font-size: 1.6rem;
-    color: $color-body;
+    font-size: 3rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: color 0.5s;
+    transition: 0.5s;
+    z-index: 1;
+    color: $color-fourth;
+    &:hover {
+      color: $color-body;
+      letter-spacing: 5px;
+      &::before {
+        -webkit-transform: rotate3d(0, 0, 1, 25deg) scale3d(1, 1, 1);
+        transform: rotate3d(0, 0, 1, 25deg) scale3d(1, 1, 1);
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      top: 90%;
+      margin-top: -18px;
+      left: 2%;
+      z-index: 0;
+      background: $color-third;
+      -webkit-transform: rotate3d(0, 0, 1, 25deg) scale3d(0, 1, 1);
+      transform: rotate3d(0, 0, 1, 25deg) scale3d(0, 1, 1);
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+    }
+
+    @include media-query("lap") {
+      font-size: 2rem;
+      font-weight: 600;
+    }
     @include media-query("max", $palm-start) {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
+      font-weight: 500;
     }
   }
+  .linksWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
+.wrapper .hamburger > div::before,
+.wrapper .hamburger > div::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.wrapper .hamburger > div::after {
+  top: 10px;
+}
+
+.wrapper .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.wrapper .toggler:checked + .hamburger > div:before,
+.wrapper .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.wrapper .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+.wrapper .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.wrapper .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+
+.wrapper .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+.wrapper .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .menu > div {
+  background: rgba(15, 15, 15, 0.952);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.wrapper .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.wrapper .menu > div > div > ul > li {
+  list-style: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.wrapper .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
