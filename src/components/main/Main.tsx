@@ -27,7 +27,9 @@ export const Main = () => {
         </div>
 
         <div className={styles.wrapImage}>
-          <img src={myPhoto} className={styles.img} alt="" />
+          <div className={styles.imgHover}>
+            <img src={myPhoto} className={styles.img} alt="" />
+          </div>
         </div>
       </div>
     </div>
