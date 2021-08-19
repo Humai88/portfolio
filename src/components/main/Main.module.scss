@@ -64,7 +64,7 @@
         height: 47vh;
       }
       @include media-query("max", $palm-start) {
-        height: 55vh;
+        height: 41vh;
       }
     }
     .wrapImage {
@@ -80,6 +80,10 @@
         z-index: 1;
         border: 2px solid $color-third;
         transition: all 0.9s ease-out;
+        @include media-query("max", $palm-start) {
+          width: 100%;
+          height: 41vh;
+        }
       }
       &::before {
         background-color: $color-third;
@@ -89,6 +93,10 @@
       &::after {
         bottom: -15px;
         right: -15px;
+        @include media-query("max", $palm-start) {
+          bottom: 70px;
+          right: -15px;
+        }
       }
       &:hover {
         &::before {
@@ -98,6 +106,10 @@
         &::after {
           bottom: 20px;
           right: 20px;
+          @include media-query("max", $palm-start) {
+            bottom: 110px;
+            right: 10px;
+          }
         }
       }
     }
