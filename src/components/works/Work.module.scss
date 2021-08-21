@@ -1,7 +1,7 @@
 @import "./../../scss//global.scss";
 .wrapper {
   color: $color-body;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
   max-width: 23rem;
   background-color: $color-first;
   @include media-query("max", $palm-start) {

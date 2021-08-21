@@ -31,7 +31,8 @@
 
 @mixin header {
   font-family: $josefin;
-  color: $color-fourth;
+  color: $color-body;
+  letter-spacing: 2px;
   font-size: 3.3rem;
   text-align: center;
   font-weight: 600;

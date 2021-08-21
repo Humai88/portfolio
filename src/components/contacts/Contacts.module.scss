@@ -6,7 +6,7 @@
 
   h2 {
     @include header;
-    margin-bottom: -2rem;
+    margin-bottom: -3rem;
     @include media-query("max", $palm-start) {
       font-size: 2.4rem;
       padding: 4rem 0 5rem 0;
@@ -15,7 +15,8 @@
   .btn {
     color: $color-fourth;
     border: 1px solid $color-fourth;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
+    margin-top: 1rem;
     padding: 11px 44px;
   }
 }

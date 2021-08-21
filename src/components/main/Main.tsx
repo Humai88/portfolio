@@ -23,7 +23,8 @@ export const Main = () => {
         <div className={styles.descrWrapper}>
           <p className={styles.subheader}>Hi there</p>
           <h1>I am Gumay</h1>
-          <p className={styles.descr}>A React Developer</p>
+          <div className={styles.underline}></div>
+          <p className={styles.descr}>A React Developer.</p>
         </div>
 
         <div className={styles.wrapImage}>
