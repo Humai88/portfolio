@@ -92,28 +92,25 @@
   }
 }
 
-// .wrapper .hamburger > div::before,
+// .wrapper .hamburger > div::before
 .wrapper .hamburger > div::after {
   content: "";
   position: absolute;
   z-index: 3;
-  top: -10px;
+  top: 12px;
   width: 70%;
   height: 2px;
   right: 0;
   background: inherit;
 }
 
-.wrapper .hamburger > div::after {
-  top: 10px;
-}
-
 .wrapper .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
+  transform: rotate(225deg);
 }
 
 .wrapper .toggler:checked + .hamburger > div:before,
 .wrapper .toggler:checked + .hamburger > div:after {
+  width: 100%;
   top: 0;
   transform: rotate(90deg);
 }

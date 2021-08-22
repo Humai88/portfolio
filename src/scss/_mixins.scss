@@ -36,11 +36,25 @@
   font-size: 3.3rem;
   text-align: center;
   font-weight: 600;
-  padding: 8rem 0 8rem 0;
+  padding: 7rem 0 2.5rem 0;
+  @include media-query("max", $palm-start) {
+    font-size: 2.4rem;
+    padding: 4rem 0 2rem 0;
+  }
 }
 @mixin container {
   margin: 0 auto;
   display: flex;
+}
+@mixin line {
+  height: 2px;
+  width: 5rem;
+  background: #ff6b6b;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  @include media-query("max", $palm-start) {
+    margin-bottom: 5rem;
+  }
 }
 /* EXAMPLE
 input,  

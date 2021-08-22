@@ -1,21 +1,35 @@
 @import "./../../scss//global.scss";
 .wrapper {
   color: $color-body;
-  margin-bottom: 8rem;
-  max-width: 21rem;
-  margin-top: -2rem;
+  margin-bottom: 4rem;
+  width: 21rem;
   @include media-query("max", $palm-start) {
     margin-bottom: 5rem;
   }
-  .img {
+  .iconWrapper {
     width: 7rem;
     height: 7rem;
-    background-color: $color-fourth;
     margin: 0 auto;
+    .img {
+      width: 7rem;
+      height: 7rem;
+      background-color: $color-bg2;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-shadow: 5px 5px 5px #0d0d0d, -5px -5px 5px #1b1b1b;
+    }
   }
+
   .header {
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
     margin: 3rem 0 1rem 0;
     text-align: center;
     @include media-query("max", $palm-start) {

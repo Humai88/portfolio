@@ -8,6 +8,14 @@
     width: 70%;
   }
 
+  input,
+  textarea {
+    color: $color-body;
+    border: 1px solid $color-fourth;
+    padding: 2px 10px;
+    background: rgb(46, 46, 46);
+    font-size: 1.2rem;
+  }
   input {
     height: 2rem;
     margin-bottom: 0.7rem;
@@ -15,6 +23,8 @@
   textarea {
     height: 10rem;
     margin-bottom: 3rem;
+    padding: 10px 10px;
+
     @include media-query("max", $palm-start) {
       height: 7rem;
     }

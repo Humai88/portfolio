@@ -1,6 +1,7 @@
 @import "./../../scss//global.scss";
 .wrapper {
-  background-color: $color-first;
+  background-color: $color-bg3;
+  padding: 0 5%;
   .container {
     @include container;
     flex-wrap: wrap;
@@ -9,9 +10,11 @@
   }
   h2 {
     @include header;
+  }
+  .line {
+    @include line;
     @include media-query("max", $palm-start) {
-      font-size: 2.4rem;
-      padding: 4rem 0 3rem 0;
+      margin-bottom: 2rem;
     }
   }
 }

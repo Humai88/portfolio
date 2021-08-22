@@ -1,13 +1,26 @@
 import Button from "../../UI/Button/Button";
 import styles from "./Work.module.scss";
 
-export const Work = () => {
+type WorkPropsType = {
+  title: string;
+  text: string;
+  imgSrc: string;
+};
+export const Work: React.FC<WorkPropsType> = (props) => {
+  const { title, text, imgSrc } = props;
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.box}>
-        <img src="" alt="" />
-        <Button className={styles.btn}>Show</Button>
-        <h3 className={styles.title}>Title</h3>
+    <div className={styles.card}>
+      <div className={`${styles.face} ${styles.face1}`}>
+        <div className={styles.content}>
+          <img src={imgSrc} />
+          <h3>{title}</h3>
+        </div>
+      </div>
+      <div className={`${styles.face} ${styles.face2}`}>
+        <div className={styles.content}>
+          <p>{text}</p>
+          <a href="#">Open</a>
+        </div>
       </div>
     </div>
   );
