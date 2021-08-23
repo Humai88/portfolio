@@ -14,12 +14,6 @@ export const Skill: React.FC<SkillPropsType> = (props) => {
         {img}
       </div>
       <h3 className={styles.header}>{title}</h3>
-      {/* <p className={styles.descr}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-        magnam, fuga nesciunt possimus adipisci reprehenderit repellendus
-        doloribus, quaerat corrupti ipsum repellat voluptates autem obcaecati,
-        ratione totam. Corporis debitis mollitia velit.
-      </p> */}
     </div>
   );
 };

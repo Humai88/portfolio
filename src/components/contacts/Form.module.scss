@@ -15,6 +15,9 @@
     padding: 2px 10px;
     background: rgb(46, 46, 46);
     font-size: 1.2rem;
+    @include media-query("max", $palm-start) {
+      font-size: 1rem;
+    }
   }
   input {
     height: 2rem;
@@ -26,7 +29,7 @@
     padding: 10px 10px;
 
     @include media-query("max", $palm-start) {
-      height: 7rem;
+      height: 9rem;
     }
   }
 }

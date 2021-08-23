@@ -11,6 +11,10 @@
     margin-bottom: 7rem;
     margin-top: 1rem;
     padding: 11px 44px;
+    @include media-query("max", $palm-start) {
+      padding: 7px 33px;
+      font-size: 0.9rem;
+    }
   }
   .line {
     @include line;

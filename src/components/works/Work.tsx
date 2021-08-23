@@ -12,7 +12,7 @@ export const Work: React.FC<WorkPropsType> = (props) => {
     <div className={styles.card}>
       <div className={`${styles.face} ${styles.face1}`}>
         <div className={styles.content}>
-          <img src={imgSrc} />
+          <img className={styles.img} src={imgSrc} />
           <h3>{title}</h3>
         </div>
       </div>

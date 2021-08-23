@@ -10,7 +10,8 @@
     margin-bottom: 7rem;
     padding: 11px 44px;
     @include media-query("max", $palm-start) {
-      padding: 9px 38px;
+      padding: 7px 33px;
+      font-size: 0.9rem;
     }
   }
   h3 {
