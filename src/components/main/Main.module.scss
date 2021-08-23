@@ -19,7 +19,7 @@
       margin-top: 5rem;
       @include media-query("max", $palm-start) {
         font-size: 1.3rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
       }
     }
     h1 {
@@ -31,17 +31,13 @@
       letter-spacing: 2px;
       text-shadow: 1px 1px 15px rgb(41, 41, 41);
       @include media-query("max", $palm-start) {
-        font-size: 2rem;
+        font-size: 2.3rem;
       }
       @include media-query("lap") {
         font-size: 2.6rem;
       }
     }
-    .descr {
-      @include media-query("max", $palm-start) {
-        font-size: 1.3rem;
-      }
-    }
+
     .typewriter {
       font-size: 2rem;
       font-weight: 400;
@@ -49,11 +45,8 @@
       overflow: hidden;
       border-right: 0.15em solid $color-body;
       white-space: nowrap;
-      margin: 0 auto;
-      margin-top: 1rem;
       letter-spacing: 0.15em;
-      animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-      text-shadow: 1px 1px 15px rgb(41, 41, 41);
+      animation: blink-caret 0.5s step-end infinite;
       @include media-query("max", $palm-start) {
         font-size: 1.2rem;
       }
