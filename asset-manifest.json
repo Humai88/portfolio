@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a613b828.chunk.css",
+    "main.css": "/portfolio/static/css/main.17c1c943.chunk.css",
     "main.js": "/portfolio/static/js/main.d839e8f4.chunk.js",
     "main.js.map": "/portfolio/static/js/main.d839e8f4.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.6a02f7c6.js",
@@ -10,14 +10,14 @@
     "static/js/3.44a0f043.chunk.js": "/portfolio/static/js/3.44a0f043.chunk.js",
     "static/js/3.44a0f043.chunk.js.map": "/portfolio/static/js/3.44a0f043.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a613b828.chunk.css.map": "/portfolio/static/css/main.a613b828.chunk.css.map",
+    "static/css/main.17c1c943.chunk.css.map": "/portfolio/static/css/main.17c1c943.chunk.css.map",
     "static/js/2.9652ab34.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9652ab34.chunk.js.LICENSE.txt",
     "static/media/Lumii_20210818_134947399.1f690baa.jpg": "/portfolio/static/media/Lumii_20210818_134947399.1f690baa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6a02f7c6.js",
     "static/js/2.9652ab34.chunk.js",
-    "static/css/main.a613b828.chunk.css",
+    "static/css/main.17c1c943.chunk.css",
     "static/js/main.d839e8f4.chunk.js"
   ]
 }
