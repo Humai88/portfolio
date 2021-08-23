@@ -18,6 +18,10 @@
     @include media-query("max", $palm-start) {
       font-size: 1rem;
     }
+    &:focus {
+      background: rgb(212, 212, 212);
+      color: $color-bg3;
+    }
   }
   input {
     height: 2rem;
