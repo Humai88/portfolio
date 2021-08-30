@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Skill.module.scss";
 
 type SkillPropsType = {
-  title: string;
+  title?: string;
   img: any;
 };
 export const Skill: React.FC<SkillPropsType> = (props) => {

@@ -1,6 +1,6 @@
-import Button from "../../UI/Button/Button";
 import styles from "./Work.module.scss";
-
+import { FaCloud } from "react-icons/fa";
+import { GoMarkGithub } from "react-icons/go";
 type WorkPropsType = {
   title: string;
   text: string;
@@ -19,7 +19,15 @@ export const Work: React.FC<WorkPropsType> = (props) => {
       <div className={`${styles.face} ${styles.face2}`}>
         <div className={styles.content}>
           <p>{text}</p>
-          <a href="#">Open</a>
+          <div className={styles.linksWrapper}>
+            <a href="#">
+              <GoMarkGithub className={styles.icon} />
+              GitHub
+            </a>
+            <a className={styles.btn} href="#">
+              <FaCloud /> Visit the Site
+            </a>
+          </div>
         </div>
       </div>
     </div>

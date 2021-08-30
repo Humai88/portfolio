@@ -1,5 +1,5 @@
 import styles from "./Main.module.scss";
-import myPhoto from "./../../assets/img/Lumii_20210818_134947399.jpg";
+import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
 import { TypeWriter } from "./TypingWriter";
 
 export const Main = () => {

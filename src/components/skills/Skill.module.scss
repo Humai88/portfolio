@@ -2,7 +2,7 @@
 .wrapper {
   color: $color-body;
   margin-bottom: 4rem;
-  width: 21rem;
+  width: 10rem;
   @include media-query("max", $palm-start) {
     margin-bottom: 5rem;
   }
@@ -10,6 +10,10 @@
     width: 7rem;
     height: 7rem;
     margin: 0 auto;
+    @include media-query("max", $palm-start) {
+      width: 5rem;
+      height: 5rem;
+    }
     .img {
       width: 7rem;
       height: 7rem;
@@ -24,6 +28,10 @@
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
       box-shadow: 5px 5px 5px #0d0d0d, -5px -5px 5px #1b1b1b;
+      @include media-query("max", $palm-start) {
+        width: 5rem;
+        height: 5rem;
+      }
     }
   }
 
