@@ -5,9 +5,11 @@ type WorkPropsType = {
   title: string;
   text: string;
   imgSrc: string;
+  ghLink: string;
+  webLink: string;
 };
 export const Work: React.FC<WorkPropsType> = (props) => {
-  const { title, text, imgSrc } = props;
+  const { title, text, imgSrc, ghLink, webLink } = props;
   return (
     <div className={styles.card}>
       <div className={`${styles.face} ${styles.face1}`}>
@@ -20,11 +22,16 @@ export const Work: React.FC<WorkPropsType> = (props) => {
         <div className={styles.content}>
           <p>{text}</p>
           <div className={styles.linksWrapper}>
-            <a href="#">
+            <a href={ghLink} target="_blank" rel="noreferrer">
               <GoMarkGithub className={styles.icon} />
               GitHub
             </a>
-            <a className={styles.btn} href="#">
+            <a
+              className={styles.btn}
+              href={webLink}
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaCloud /> Visit the Site
             </a>
           </div>

@@ -18,7 +18,7 @@ export const ContactForm = () => {
         validationSchema={Yup.object({
           name: Yup.string()
             .min(2, "Must be at least 2 characters")
-            .max(15, "Must be 15 characters or less")
+            .max(30, "Must be less then 30 characters")
             .required("Required!"),
           email: Yup.string()
             .email("Must be a valid email!")

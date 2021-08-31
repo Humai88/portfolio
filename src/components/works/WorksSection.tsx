@@ -13,18 +13,24 @@ export const WorksSection = () => {
       <div className={styles.container}>
         <Work
           title="Social Network"
-          text="I prefer this to using template literals like @steven iseki suggested because it is easier to add and remove classes without having to wrap them in ${} every single time."
+          text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), Axios, Formik, Yup and Typescript. "
           imgSrc={social}
+          ghLink="https://github.com/Humai88/socialnetwork"
+          webLink=""
         />
         <Work
           title="Todolist"
-          text="I prefer this to using template literals like @steven iseki suggested because it is easier to add and remove classes without having to wrap them in ${} every single time."
+          text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data), Axios, SASS, Material UI "
           imgSrc={todo}
+          ghLink="https://github.com/Humai88/todolist"
+          webLink="https://humai88.github.io/todolist/"
         />
         <Work
           title="Blog"
-          text="I prefer this to using template literals like @steven iseki suggested because it is easier to add and remove classes without having to wrap them in ${} every single time."
+          text="A primary school teacher's blog that I first built using vanilla JS but after a while migrated it to React. I implemented CSS Modules approach and SASS for styling. For displaying data I used fetching data from a local JSON."
           imgSrc={blog}
+          ghLink="https://github.com/Humai88/on-les"
+          webLink="https://www.on-les.com/"
         />
       </div>
     </div>
