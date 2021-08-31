@@ -35,11 +35,34 @@
   }
   textarea {
     height: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     padding: 10px 10px;
 
     @include media-query("max", $palm-start) {
       height: 9rem;
     }
+  }
+  .btn {
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    padding: 11px 44px;
+    margin-top: 1.5rem;
+    @include media-query("max", $palm-start) {
+      padding: 7px 33px;
+      font-size: 0.9rem;
+    }
+  }
+  .msg {
+    width: 20rem;
+    margin: 0 auto;
+    font-size: 1.7rem;
+    color: #80ed99;
+    font-weight: 300;
+    padding: 6px 3px;
+    border: 1px solid #80ed99;
+    display: none;
+  }
+  .msgAppear {
+    display: block;
   }
 }
