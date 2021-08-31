@@ -16,7 +16,7 @@ export const WorksSection = () => {
           text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), Axios, Formik, Yup and Typescript. "
           imgSrc={social}
           ghLink="https://github.com/Humai88/socialnetwork"
-          webLink=""
+          webLink="http://Humai88.github.io/socialnetwork"
         />
         <Work
           title="Todolist"
