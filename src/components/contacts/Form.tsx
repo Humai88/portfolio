@@ -28,11 +28,7 @@ export const ContactForm = () => {
         onSubmit={(values, { setSubmitting, resetForm }) => {
           resetForm();
           setSubmitting(false);
-          // console.log(values);
-          // axios
-          //   .post("/api/forma", values)
-          //   .then((res) => console.log(res))
-          //   .catch((err) => console.log("Message not sent"));
+          console.log(values);
         }}
       >
         {(props) => {
