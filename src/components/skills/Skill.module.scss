@@ -27,7 +27,7 @@
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      box-shadow: 5px 5px 5px #0d0d0d, -5px -5px 5px #1b1b1b;
+      box-shadow: 5px 5px 6px #161616, -5px -5px 6px #1e1e1e;
       @include media-query("max", $palm-start) {
         width: 5rem;
         height: 5rem;

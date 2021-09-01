@@ -12,10 +12,12 @@
   outline: none;
   padding: 10px 10px;
   margin-top: 1rem;
+  resize: none;
 
   @include media-query("max", $palm-start) {
     font-size: 1rem;
     height: 9rem;
+    // resize: both;
   }
   &:focus {
     color: $color-body;

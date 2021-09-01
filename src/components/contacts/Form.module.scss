@@ -23,7 +23,7 @@
     background: $color-bg5;
     padding: 11px 44px;
     margin-top: 1.5rem;
-    box-shadow: 5px 5px 7px #282828, -5px -5px 7px #383838;
+    box-shadow: 5px 5px 6px #262626, -5px -5px 6px #3a3a3a;
     @include media-query("max", $palm-start) {
       padding: 7px 33px;
       font-size: 0.9rem;
@@ -31,11 +31,11 @@
     &:hover {
       color: #fdd2bfb0;
       background: linear-gradient(145deg, #2b2b2b, #333333);
-      box-shadow: 5px 5px 7px #282828, -5px -5px 7px #383838;
+      box-shadow: 5px 5px 6px #262626, -5px -5px 6px #3a3a3a;
     }
     &:active {
       color: #fdd2bf69;
-      box-shadow: inset 5px 5px 7px #282828, inset -5px -5px 7px #383838;
+      box-shadow: inset 5px 5px 6px #262626, inset -5px -5px 6px #3a3a3a;
     }
   }
   .msg {
