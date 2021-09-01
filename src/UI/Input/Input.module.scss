@@ -6,7 +6,7 @@ input {
   background: #303030;
   font-weight: 300;
   box-shadow: inset 5px 5px 9px #282828, inset -5px -5px 9px #383838;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   height: 2.4rem;
   margin-top: 1rem;
   border: none;
@@ -16,7 +16,5 @@ input {
   }
   &:focus {
     color: $color-body;
-    opacity: 0.7;
-    font-size: 1.4rem;
   }
 }
