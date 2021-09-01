@@ -1,21 +1,13 @@
 @import "./../../scss/global.scss";
 .wrapper {
-  background-color: $color-bg5;
+  background: $color-bg5;
   color: $color-fourth;
   text-align: center;
-
+  padding-bottom: 7rem;
   h2 {
     @include header;
   }
-  .btn {
-    margin-bottom: 7rem;
-    margin-top: 1rem;
-    padding: 11px 44px;
-    @include media-query("max", $palm-start) {
-      padding: 7px 33px;
-      font-size: 0.9rem;
-    }
-  }
+
   .line {
     @include line;
   }

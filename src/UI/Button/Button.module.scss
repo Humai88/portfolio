@@ -1,16 +1,18 @@
 @import "./../../scss/global.scss";
 .default {
   padding: 8px 39px;
-  color: $color-fourth;
-  border: 1px solid $color-fourth;
+  color: $color-second;
+  border: none;
+  outline: none;
+  border-radius: 7px;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.15s;
   font-weight: 400;
   font-size: 1.1rem;
-  background-color: transparent;
+  transition: 0.3s;
 }
 .default:hover {
-  color: $color-second;
-  border: 1px solid $color-second;
+  // color: $color-second;
+  // border: 1px solid $color-second;
 }

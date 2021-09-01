@@ -27,7 +27,7 @@ export const WorksSection = () => {
         />
         <Work
           title="Blog"
-          text="A primary school teacher's blog that I first built using vanilla JS but after a while migrated it to React. I implemented CSS Modules approach and SASS for styling. For displaying data I used fetching data from a local JSON."
+          text="A primary school teacher's blog (Standalone server) that I first built using vanilla JS but after a while migrated it to React. I implemented CSS Modules approach and SASS for styling. For displaying data I used fetching data from a local JSON."
           imgSrc={blog}
           ghLink="https://github.com/Humai88/on-les"
           webLink="https://www.on-les.com/"
