@@ -24,7 +24,6 @@
     transform: translateY(100px);
     box-shadow: 5px 5px 6px #191919, -5px -5px 6px #272727;
     @include media-query("max", $palm-start) {
-      background: $color-third;
       transform: translateY(0);
       box-shadow: 5px 5px 6px #191919, -5px -5px 6px #272727;
     }
@@ -103,7 +102,7 @@
 
   .face.face2 .content a:hover {
     background: #333;
-    color: $color-bg5;
+    color: $color-second;
   }
   .linksWrapper {
     display: flex;

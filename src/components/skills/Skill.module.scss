@@ -10,6 +10,7 @@
     width: 7rem;
     height: 7rem;
     margin: 0 auto;
+
     @include media-query("max", $palm-start) {
       width: 5rem;
       height: 5rem;
@@ -28,6 +29,10 @@
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
       box-shadow: 5px 5px 6px #161616, -5px -5px 6px #1e1e1e;
+      transition: 0.5s;
+      &:hover {
+        border-radius: 50%;
+      }
       @include media-query("max", $palm-start) {
         width: 5rem;
         height: 5rem;

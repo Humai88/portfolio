@@ -3,7 +3,7 @@ import { Work } from "./Work";
 import styles from "./WorksSection.module.scss";
 import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
 import blog from "./../../assets/img/2021-09-03 19_02_11-on-les.jpg";
-import social from "./../../assets/img/2021-09-03 18_56_57-Grem.jpg";
+import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export const WorksSection = () => {
@@ -22,7 +22,7 @@ export const WorksSection = () => {
           />
           <Work
             title="Todolist"
-            text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data), Axios, SASS, Material UI "
+            text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data), Axios, SASS, Material UI. "
             imgSrc={todo}
             ghLink="https://github.com/Humai88/todolist"
             webLink="https://humai88.github.io/todolist/"

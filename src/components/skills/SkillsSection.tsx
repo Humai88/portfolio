@@ -71,7 +71,7 @@ export const SkillsSection = () => {
       <h2 className={styles.tools}>Tools I Use</h2>
       <div className={styles.line}></div>
       <div className={`${styles.container} ${styles.toolsWrapper}`}>
-        <Fade duration={2000}>
+        <Fade duration={2300}>
           <Skill
             img={
               <SiVisualstudiocode
