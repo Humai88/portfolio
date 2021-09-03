@@ -8,7 +8,7 @@ export const RemoteJob = () => {
       <h3>I Am Available For Remote Job</h3>
       <div className={styles.line}></div>
       <a
-        href="https://www.linkedin.com/in/gumay-vierdiyeva-296949215/detail/contact-info/"
+        href="https://www.linkedin.com/in/gumay-vierdiyeva-296949215/"
         target="_blank"
         rel="noreferrer"
       >
