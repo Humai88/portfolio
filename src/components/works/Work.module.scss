@@ -67,8 +67,6 @@
     margin-bottom: 2rem;
     @include media-query("max", $palm-start) {
       transform: translateY(0);
-      background-color: $color-bg3;
-      color: $color-body;
     }
   }
 
@@ -80,9 +78,6 @@
     margin: 0;
     padding: 0;
     color: $color-bg3;
-    @include media-query("max", $palm-start) {
-      color: $color-body;
-    }
   }
 
   .face.face2 .content a {
@@ -95,9 +90,6 @@
     text-align: center;
     color: #333;
     border: 1px solid #333;
-    @include media-query("max", $palm-start) {
-      color: $color-body;
-    }
   }
 
   .face.face2 .content a:hover {
