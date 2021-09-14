@@ -1,6 +1,7 @@
 import styles from "./Main.module.scss";
 import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
 import { TypeWriter } from "./TypingWriter";
+import { useState } from "react";
 
 export const Main = () => {
   let msgs = [
@@ -39,6 +40,9 @@ export const Main = () => {
             <img src={myPhoto} className={styles.img} alt="" />
           </div>
         </div>
+      </div>
+      <div className={styles.sidebar}>
+        <button>Red</button>
       </div>
     </div>
   );

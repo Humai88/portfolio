@@ -4,7 +4,6 @@ import * as Yup from "yup";
 import styles from "./Form.module.scss";
 import { Input } from "../../UI/Input/Input";
 import { Textarea } from "../../UI/Textarea/Textarea";
-import axios from "axios";
 
 export const ContactForm = () => {
   return (
