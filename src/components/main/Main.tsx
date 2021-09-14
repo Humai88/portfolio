@@ -41,9 +41,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <div className={styles.sidebar}>
-        <button>Red</button>
-      </div>
+      <div className={styles.sidebar}>{/* <button>Red</button> */}</div>
     </div>
   );
 };
