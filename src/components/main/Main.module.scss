@@ -179,7 +179,7 @@
     margin-bottom: 5px;
     color: $color-body;
     transition: 0.9s;
-    opacity: 0.8;
+    opacity: 0.7;
     padding: 1rem;
     &:hover {
       color: var(--toggle-color);
@@ -197,13 +197,13 @@
     padding: 0 1rem;
     div {
       font-size: 2.5rem;
-      // height: 2.5rem;
       border-radius: 3px;
       margin-bottom: 5px;
       transition: 0.5s;
       opacity: 0.8;
       &:hover {
         opacity: 1;
+        transform: scale(1.1);
       }
       @include media-query("max", $palm-start) {
         font-size: 2rem;

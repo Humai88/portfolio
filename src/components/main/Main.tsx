@@ -33,6 +33,7 @@ export const Main = () => {
             className={styles.yellow}
             onClick={() => {
               setTheme("#FFC93C");
+              setToggle(false);
             }}
           >
             <ImDroplet />
@@ -41,6 +42,7 @@ export const Main = () => {
             className={styles.blue}
             onClick={() => {
               setTheme("#2978B5");
+              setToggle(false);
             }}
           >
             <ImDroplet />
@@ -49,6 +51,7 @@ export const Main = () => {
             className={styles.purple}
             onClick={() => {
               setTheme("#7952B3");
+              setToggle(false);
             }}
           >
             <ImDroplet />
@@ -57,6 +60,7 @@ export const Main = () => {
             className={styles.pink}
             onClick={() => {
               setTheme("#FD6F96");
+              setToggle(false);
             }}
           >
             <ImDroplet />
@@ -65,6 +69,7 @@ export const Main = () => {
             className={styles.peach}
             onClick={() => {
               setTheme("#ff6b6b");
+              setToggle(false);
             }}
           >
             <ImDroplet />
