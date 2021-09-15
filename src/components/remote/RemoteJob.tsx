@@ -12,7 +12,7 @@ export const RemoteJob = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <Button className={styles.btn}>Hire me</Button>
+        <Button className={styles.btn}>hire me</Button>
       </a>
     </div>
   );

@@ -1,7 +1,10 @@
 import styles from "./Main.module.scss";
 import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
 import { TypeWriter } from "./TypingWriter";
+import { useStickyState } from "../../localStorage";
+import { IoColorPaletteOutline } from "react-icons/io5";
 import { useState } from "react";
+import { ImDroplet } from "react-icons/im";
 
 export const Main = () => {
   let msgs = [
@@ -9,10 +12,71 @@ export const Main = () => {
     "This is my website.",
     "I am at your service.",
   ];
+  const [theme, setTheme] = useStickyState<string>("#ff6b6b", "theme");
+  const [toggle, setToggle] = useState(false);
+  document.documentElement.style.setProperty("--toggle-color", theme);
 
   return (
     <div id="home" className={styles.wrapper}>
-      <ul className={styles.circles}>
+      <div
+        className={styles.sidebarToggler}
+        onClick={() => {
+          setToggle(!toggle);
+        }}
+      >
+        <IoColorPaletteOutline />
+      </div>
+
+      {toggle ? (
+        <div className={styles.sidebar}>
+          <div
+            className={styles.yellow}
+            onClick={() => {
+              setTheme("#FFC93C");
+            }}
+          >
+            <ImDroplet />
+          </div>
+          <div
+            className={styles.blue}
+            onClick={() => {
+              setTheme("#2978B5");
+            }}
+          >
+            <ImDroplet />
+          </div>
+          <div
+            className={styles.purple}
+            onClick={() => {
+              setTheme("#7952B3");
+            }}
+          >
+            <ImDroplet />
+          </div>
+          <div
+            className={styles.pink}
+            onClick={() => {
+              setTheme("#FD6F96");
+            }}
+          >
+            <ImDroplet />
+          </div>
+          <div
+            className={styles.peach}
+            onClick={() => {
+              setTheme("#ff6b6b");
+            }}
+          >
+            <ImDroplet />
+          </div>
+        </div>
+      ) : null}
+      <ul
+        className={styles.circles}
+        onClick={() => {
+          setToggle(false);
+        }}
+      >
         <li></li>
         <li></li>
         <li></li>
@@ -41,7 +105,6 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <div className={styles.sidebar}>{/* <button>Red</button> */}</div>
     </div>
   );
 };

@@ -6,22 +6,17 @@
   justify-content: center;
   background-color: $color-bg4;
   color: $color-fourth;
+  padding-bottom: 7rem;
   .btn {
-    margin-bottom: 7rem;
-    padding: 11px 44px;
+    padding: 11px 0;
     background: $color-bg4;
     box-shadow: 5px 5px 6px #1f1f1f, -5px -5px 6px #2f2f2f;
-    @include media-query("max", $palm-start) {
-      padding: 7px 33px;
-      font-size: 0.9rem;
-    }
+
     &:hover {
-      color: #fdd2bfb0;
       background: linear-gradient(145deg, #232323, #2a2a2a);
       box-shadow: 5px 5px 6px #1f1f1f, -5px -5px 6px #2f2f2f;
     }
     &:active {
-      color: #fdd2bf69;
       box-shadow: inset 5px 5px 6px #1f1f1f, inset -5px -5px 6px #2f2f2f;
     }
   }

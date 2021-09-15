@@ -85,7 +85,9 @@ h6 {
 //   border: 1px solid red;
 //   box-sizing: border-box;
 // }
-
+:root {
+  --toggle-color: #ff6b6b;
+}
 .wrapper {
   min-height: 100vh;
   display: flex;

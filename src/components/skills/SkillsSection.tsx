@@ -25,7 +25,7 @@ export const SkillsSection = () => {
           <Skill
             img={
               <SiJavascript
-                style={{ color: "#ECD662" }}
+                style={{ color: "#FFC93C" }}
                 className={styles.icon}
               />
             }

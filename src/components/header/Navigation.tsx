@@ -9,6 +9,7 @@ export const Navigation = () => {
   const hideNavbar = () => {
     setNav(false);
   };
+
   return (
     <div className={styles.wrapper}>
       <input

@@ -1,6 +1,6 @@
 @import "./../../scss/global.scss";
 .wrapper {
-  background-color: $color-third;
+  background-color: var(--toggle-color);
   .container {
     display: flex;
     flex-direction: column;

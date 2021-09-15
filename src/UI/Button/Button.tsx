@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
-import s from "./Button.module.scss";
+import styles from "./Button.module.scss";
 
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан
 type DefaultButtonPropsType = DetailedHTMLProps<
@@ -16,9 +16,14 @@ const Button: React.FC<ButtonPropsType> = ({
   className,
   ...restProps // все остальные пропсы попадут в объект restProps, там же будет children
 }) => {
-  const finalClassName = `${red ? s.red : s.default} ${className}`;
+  const finalClassName = `${red ? styles.red : styles.default} ${className}`;
 
-  return <button className={finalClassName} {...restProps} />;
+  return (
+    <div>
+      <button className={finalClassName} {...restProps} />
+      <div className={styles.after}></div>
+    </div>
+  );
 };
 
 export default Button;

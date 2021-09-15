@@ -2,7 +2,7 @@ import React from "react";
 import { Work } from "./Work";
 import styles from "./WorksSection.module.scss";
 import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
-import blog from "./../../assets/img/2021-09-03 19_02_11-on-les.jpg";
+import blog from "./../../assets/img/2021-09-15 11_25_49-on-les.jpg";
 import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
 import { Fade } from "react-awesome-reveal";
 

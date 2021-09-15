@@ -35,7 +35,7 @@
       margin-top: -18px;
       left: 2%;
       z-index: 0;
-      background: $color-third;
+      background: var(--toggle-color);
       -webkit-transform: rotate3d(0, 0, 1, 25deg) scale3d(0, 1, 1);
       transform: rotate3d(0, 0, 1, 25deg) scale3d(0, 1, 1);
       -webkit-transition: -webkit-transform 0.5s;
