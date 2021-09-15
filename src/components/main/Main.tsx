@@ -1,5 +1,6 @@
 import styles from "./Main.module.scss";
-import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
+// import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
+import myPhoto from "./../../assets/img/photo_2021-09-15_20-33-22.jpg";
 import { TypeWriter } from "./TypingWriter";
 import { useStickyState } from "../../localStorage";
 import { IoColorPaletteOutline } from "react-icons/io5";
@@ -48,6 +49,15 @@ export const Main = () => {
             <ImDroplet />
           </div>
           <div
+            className={styles.teal}
+            onClick={() => {
+              setTheme("#055052");
+              setToggle(false);
+            }}
+          >
+            <ImDroplet />
+          </div>
+          <div
             className={styles.purple}
             onClick={() => {
               setTheme("#7952B3");
@@ -56,15 +66,7 @@ export const Main = () => {
           >
             <ImDroplet />
           </div>
-          <div
-            className={styles.pink}
-            onClick={() => {
-              setTheme("#FD6F96");
-              setToggle(false);
-            }}
-          >
-            <ImDroplet />
-          </div>
+
           <div
             className={styles.peach}
             onClick={() => {
