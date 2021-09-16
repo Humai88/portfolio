@@ -147,7 +147,7 @@
         bottom: -15px;
         right: -15px;
         @include media-query("max", $palm-start) {
-          bottom: 30px;
+          bottom: 35px;
           right: -15px;
         }
         @include media-query("lap") {
@@ -227,7 +227,7 @@
       color: #7952b3;
     }
     .teal {
-      color: #055052;
+      color: #368b85;
     }
     .peach {
       color: #f08a5d;

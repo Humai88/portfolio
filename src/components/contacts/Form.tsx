@@ -30,7 +30,7 @@ export const ContactForm = () => {
           setSubmitting(false);
           console.log(values);
           axios.post("http://localhost:3010/sendMessage", values).then(() => {
-            alert("Message was sent");
+            return <div>Thank you</div>;
           });
         }}
       >

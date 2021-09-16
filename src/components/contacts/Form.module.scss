@@ -46,4 +46,10 @@
   .msgAppear {
     display: block;
   }
+  div {
+    color: var(--toggle-color);
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 5px 0 0 0;
+  }
 }

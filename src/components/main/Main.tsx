@@ -51,7 +51,7 @@ export const Main = () => {
           <div
             className={styles.teal}
             onClick={() => {
-              setTheme("#055052");
+              setTheme("#368B85");
               setToggle(false);
             }}
           >
