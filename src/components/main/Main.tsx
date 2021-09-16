@@ -70,7 +70,7 @@ export const Main = () => {
           <div
             className={styles.peach}
             onClick={() => {
-              setTheme("#E98580");
+              setTheme("#ff6b6b");
               setToggle(false);
             }}
           >
