@@ -33,7 +33,7 @@ export const Main = () => {
           <div
             className={styles.yellow}
             onClick={() => {
-              setTheme("#FFC93C");
+              setTheme("#ddb247");
               setToggle(false);
             }}
           >
@@ -70,7 +70,7 @@ export const Main = () => {
           <div
             className={styles.peach}
             onClick={() => {
-              setTheme("#ff6b6b");
+              setTheme("#F08A5D");
               setToggle(false);
             }}
           >

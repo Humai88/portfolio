@@ -26,11 +26,14 @@
     @include media-query("max", $palm-start) {
       transform: translateY(0);
       box-shadow: 5px 5px 6px #191919, -5px -5px 6px #272727;
+      background-color: var(--toggle-color);
     }
   }
 
   &:hover .face.face1 {
+    background-color: var(--toggle-color);
     transform: translateY(0);
+    box-shadow: 5px 5px 6px #191919, -5px -5px 6px #272727;
   }
 
   .face.face1 .content {
@@ -40,6 +43,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include media-query("max", $palm-start) {
+      opacity: 1;
+    }
   }
 
   &:hover .face.face1 .content {
