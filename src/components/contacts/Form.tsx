@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import styles from "./Form.module.scss";
 import { Input } from "../../UI/Input/Input";
 import { Textarea } from "../../UI/Textarea/Textarea";
+import axios from "axios";
 
 export const ContactForm = () => {
   return (
@@ -22,12 +23,15 @@ export const ContactForm = () => {
           email: Yup.string()
             .email("Must be a valid email!")
             .required("Required!"),
-          message: Yup.string().min(50, "Must be at least 50 characters"),
+          message: Yup.string().min(30, "Must be at least 30 characters"),
         })}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           resetForm();
           setSubmitting(false);
           console.log(values);
+          axios.post("http://localhost:3010/sendMessage", values).then(() => {
+            alert("Message was sent");
+          });
         }}
       >
         {(props) => {

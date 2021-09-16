@@ -38,6 +38,7 @@
       }
     }
 
+    // Typewriter
     .typewriter {
       font-size: 2rem;
       font-weight: 400;
@@ -87,14 +88,15 @@
       }
     }
 
+    // Image
     .imgHover {
       width: auto;
-      height: 55vh;
+      height: 49vh;
       overflow: hidden;
     }
     .img {
       width: auto;
-      height: 55vh;
+      height: 49vh;
       position: relative;
       z-index: 2;
       transition: 0.9s;
@@ -145,11 +147,11 @@
         bottom: -15px;
         right: -15px;
         @include media-query("max", $palm-start) {
-          bottom: 80px;
+          bottom: 30px;
           right: -15px;
         }
         @include media-query("lap") {
-          bottom: 50px;
+          bottom: 0;
           right: -15px;
         }
       }
@@ -157,13 +159,19 @@
         &::before {
           top: 20px;
           left: 20px;
+          @include media-query("lap") {
+            top: 40px;
+          }
         }
         &::after {
           bottom: 20px;
           right: 20px;
           @include media-query("max", $palm-start) {
-            bottom: 110px;
+            bottom: 60px;
             right: 10px;
+          }
+          @include media-query("lap") {
+            bottom: 50px;
           }
         }
       }
