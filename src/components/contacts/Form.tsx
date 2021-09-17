@@ -5,8 +5,11 @@ import styles from "./Form.module.scss";
 import { Input } from "../../UI/Input/Input";
 import { Textarea } from "../../UI/Textarea/Textarea";
 import axios from "axios";
+import { useState } from "react";
 
 export const ContactForm = () => {
+  const [toggleSending, setToggleSending] = useState(false);
+  const [succesSending, setSuccessSending] = useState(false);
   return (
     <>
       <Formik
@@ -27,10 +30,12 @@ export const ContactForm = () => {
         })}
         onSubmit={(values, { setSubmitting, resetForm }) => {
           resetForm();
+          setToggleSending(true);
           setSubmitting(false);
-          console.log(values);
+
           axios.post("http://localhost:3010/sendMessage", values).then(() => {
-            return <div>Thank you</div>;
+            setToggleSending(false);
+            setSuccessSending(true);
           });
         }}
       >
@@ -40,8 +45,14 @@ export const ContactForm = () => {
               <Input type="text" name="name" placeholder="Name" />
               <Input type="text" name="email" placeholder="E-mail" />
               <Textarea name="message" placeholder="Your message" />
-              <div className={styles.msg}>Message has been sent</div>
-              <Button className={styles.btn} type="submit">
+              {succesSending ? (
+                <div className={styles.msg}>Message has been sent </div>
+              ) : null}
+              <Button
+                disabled={toggleSending}
+                className={styles.btn}
+                type="submit"
+              >
                 {props.isSubmitting ? "Loading..." : "send message"}
               </Button>
             </Form>

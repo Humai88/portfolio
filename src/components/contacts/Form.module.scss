@@ -24,7 +24,11 @@
     padding: 11px 0;
     margin-top: 1.5rem;
     box-shadow: 5px 5px 6px #262626, -5px -5px 6px #3a3a3a;
-
+    transition: 0.4s;
+    &:disabled {
+      box-shadow: inset 5px 5px 6px #262626, inset -5px -5px 6px #3a3a3a;
+      opacity: 0.7;
+    }
     &:hover {
       background: linear-gradient(145deg, #2b2b2b, #333333);
       box-shadow: 5px 5px 6px #262626, -5px -5px 6px #3a3a3a;
@@ -34,18 +38,13 @@
     }
   }
   .msg {
-    width: 20rem;
     margin: 0 auto;
-    font-size: 1.7rem;
-    color: #80ed99;
+    font-size: 1.5rem;
+    color: #80ed99df;
     font-weight: 300;
-    padding: 6px 3px;
-    border: 1px solid #80ed99;
-    display: none;
+    margin-top: 5px;
   }
-  .msgAppear {
-    display: block;
-  }
+
   div {
     color: var(--toggle-color);
     font-size: 1.1rem;

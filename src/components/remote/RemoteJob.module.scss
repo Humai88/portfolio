@@ -11,7 +11,7 @@
     padding: 11px 0;
     background: $color-bg4;
     box-shadow: 5px 5px 6px #1f1f1f, -5px -5px 6px #2f2f2f;
-
+    transition: 0.4s;
     &:hover {
       background: linear-gradient(145deg, #232323, #2a2a2a);
       box-shadow: 5px 5px 6px #1f1f1f, -5px -5px 6px #2f2f2f;
