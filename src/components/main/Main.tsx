@@ -1,6 +1,5 @@
 import styles from "./Main.module.scss";
-// import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
-import myPhoto from "./../../assets/img/photo_2021-09-15_20-33-22.jpg";
+import myPhoto from "./../../assets/img/photo_2021-08-31_00-35-04.jpg";
 import { TypeWriter } from "./TypingWriter";
 import { useStickyState } from "../../localStorage";
 import { IoColorPaletteOutline } from "react-icons/io5";
