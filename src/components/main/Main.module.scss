@@ -147,7 +147,7 @@
         bottom: -15px;
         right: -15px;
         @include media-query("max", $palm-start) {
-          bottom: 35px;
+          bottom: 40px;
           right: -15px;
         }
         @include media-query("lap") {
