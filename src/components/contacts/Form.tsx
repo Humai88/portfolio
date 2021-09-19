@@ -33,10 +33,12 @@ export const ContactForm = () => {
           setToggleSending(true);
           setSubmitting(false);
 
-          axios.post("http://localhost:3010/sendMessage", values).then(() => {
-            setToggleSending(false);
-            setSuccessSending(true);
-          });
+          axios
+            .post("https://smtp-server-gumay.herokuapp.com/sendMessage", values)
+            .then(() => {
+              setToggleSending(false);
+              setSuccessSending(true);
+            });
         }}
       >
         {(props) => {
