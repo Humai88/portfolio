@@ -4,6 +4,7 @@ import styles from "./WorksSection.module.scss";
 import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
 import blog from "./../../assets/img/2021-09-15 11_25_49-on-les.jpg";
 import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
+import weather from "./../../assets/img/2021-09-21 20_42_14-React App.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export const WorksSection = () => {
@@ -15,14 +16,14 @@ export const WorksSection = () => {
         <Fade duration={2000}>
           <Work
             title="Social Network"
-            text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), Axios, Formik, Yup and Typescript. "
+            text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, Formik, Yup and Typescript. "
             imgSrc={social}
             ghLink="https://github.com/Humai88/socialnetwork"
             webLink="http://Humai88.github.io/socialnetwork"
           />
           <Work
             title="Todolist"
-            text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data), Axios, SASS, Material UI. "
+            text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data),TypeScript, Axios, SASS, Storybook and Material UI. "
             imgSrc={todo}
             ghLink="https://github.com/Humai88/todolist"
             webLink="https://humai88.github.io/todolist/"
@@ -33,6 +34,13 @@ export const WorksSection = () => {
             imgSrc={blog}
             ghLink="https://github.com/Humai88/on-les"
             webLink="https://www.on-les.com/"
+          />
+          <Work
+            title="Weather App"
+            text="A site that shows current weather condition. I built it using React, TypeScript, REST Api (fetching, displaying and posting data) and Axios"
+            imgSrc={weather}
+            ghLink="https://github.com/Humai88/weather-app"
+            webLink="https://humai88.github.io/weather-app/"
           />
         </Fade>
       </div>
