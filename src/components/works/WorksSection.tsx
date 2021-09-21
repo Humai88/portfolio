@@ -37,7 +37,7 @@ export const WorksSection = () => {
           />
           <Work
             title="Weather App"
-            text="A site that shows current weather condition. I built it using React, TypeScript, REST Api (fetching, displaying and posting data) and Axios"
+            text="A site that shows current weather condition. I built it using React, TypeScript, REST Api (fetching, displaying and posting data) and Axios."
             imgSrc={weather}
             ghLink="https://github.com/Humai88/weather-app"
             webLink="https://humai88.github.io/weather-app/"
