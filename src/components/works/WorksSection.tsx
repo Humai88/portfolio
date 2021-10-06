@@ -39,14 +39,14 @@ export const WorksSection = () => {
           <Work
             title="Anki cards"
             text="A website for study of selecter subject using flashcards. I built it using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, and Typescript. "
-            imgSrc={social}
+            imgSrc={anki}
             ghLink="https://github.com/Humai88/friday"
             webLink="https://humai88.github.io/friday"
           />
           <Work
             title="Social Network"
             text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, Formik, Yup and Typescript. "
-            imgSrc={anki}
+            imgSrc={social}
             ghLink="https://github.com/Humai88/socialnetwork"
             webLink="http://Humai88.github.io/socialnetwork"
           />
