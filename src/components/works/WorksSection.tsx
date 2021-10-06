@@ -5,6 +5,7 @@ import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
 import blog from "./../../assets/img/2021-09-15 11_25_49-on-les.jpg";
 import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
 import weather from "./../../assets/img/2021-09-21 20_42_14-React App.jpg";
+import anki from "./../../assets/img/2021-10-06 21_25_48-React App.jpg";
 import { Fade } from "react-awesome-reveal";
 
 export const WorksSection = () => {
@@ -14,13 +15,6 @@ export const WorksSection = () => {
       <div className={styles.line}></div>
       <div className={styles.container}>
         <Fade duration={2000}>
-          <Work
-            title="Social Network"
-            text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, Formik, Yup and Typescript. "
-            imgSrc={social}
-            ghLink="https://github.com/Humai88/socialnetwork"
-            webLink="http://Humai88.github.io/socialnetwork"
-          />
           <Work
             title="Todolist"
             text="A website for creating a tasks-list. I implemented there React (functional components, Hooks), Redux (Redux Thunk), REST Api (fetching, displaying and posting data),TypeScript, Axios, SASS, Storybook and Material UI. "
@@ -41,6 +35,20 @@ export const WorksSection = () => {
             imgSrc={weather}
             ghLink="https://github.com/Humai88/weather-app"
             webLink="https://humai88.github.io/weather-app/"
+          />
+          <Work
+            title="Anki cards"
+            text="A website for study of selecter subject using flashcards. I built it using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, and Typescript. "
+            imgSrc={social}
+            ghLink="https://github.com/Humai88/friday"
+            webLink="https://humai88.github.io/friday"
+          />
+          <Work
+            title="Social Network"
+            text="A social network website I built using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, Formik, Yup and Typescript. "
+            imgSrc={anki}
+            ghLink="https://github.com/Humai88/socialnetwork"
+            webLink="http://Humai88.github.io/socialnetwork"
           />
         </Fade>
       </div>
