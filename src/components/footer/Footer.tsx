@@ -20,11 +20,11 @@ export const Footer = () => {
             Instagram
           </a>
           <a
-            href="https://www.facebook.com/gumay.verdiyeva/"
+            href="https://www.codewars.com/users/Gumay88"
             target="_blank"
             rel="noreferrer"
           >
-            Facebook
+            Codewars
           </a>
         </div>
         <p>Copyright</p>
