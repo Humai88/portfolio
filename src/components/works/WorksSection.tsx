@@ -4,7 +4,7 @@ import styles from "./WorksSection.module.scss";
 import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
 import blog from "./../../assets/img/2021-09-15 11_25_49-on-les.jpg";
 import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
-import weather from "./../../assets/img/2021-09-21 20_42_14-React App.jpg";
+import weather from "./../../assets/img/2021-10-17 19_04_17-React App.jpg";
 import anki from "./../../assets/img/2021-10-06 21_25_48-React App.jpg";
 import { Fade } from "react-awesome-reveal";
 
@@ -31,7 +31,7 @@ export const WorksSection = () => {
           />
           <Work
             title="Weather App"
-            text="A site that shows current weather conditions. I built it using React, TypeScript, REST Api (fetching, displaying and posting data) and Axios."
+            text="A site that shows current weather conditions and 5-day weather forecast. I built it using React, TypeScript, REST Api (fetching, displaying and posting data) and Axios."
             imgSrc={weather}
             ghLink="https://github.com/Humai88/weather-app"
             webLink="https://humai88.github.io/weather-app/"
