@@ -1,11 +1,11 @@
 import React from "react";
 import { Work } from "./Work";
 import styles from "./WorksSection.module.scss";
-import todo from "./../../assets/img/2021-09-03 18_52_24-Todolist.jpg";
-import blog from "./../../assets/img/2021-09-15 11_25_49-on-les.jpg";
-import social from "./../../assets/img/2021-09-03 23_48_32-Grem.jpg";
-import weather from "./../../assets/img/2021-10-17 19_04_17-React App.jpg";
-import anki from "./../../assets/img/2021-10-06 21_25_48-React App.jpg";
+import todo from "./../../assets/img/2021-09-03-18_52_24-Todolist.webp";
+import blog from "./../../assets/img/2021-09-15-11_25_49-on-les.webp";
+import social from "./../../assets/img/2021-09-03-23_48_32-Grem.webp";
+import weather from "./../../assets/img/2021-10-17-19_04_17-React-App.webp";
+import anki from "./../../assets/img/2021-10-06-21_25_48-React-App.webp";
 import { Fade } from "react-awesome-reveal";
 
 export const WorksSection = () => {

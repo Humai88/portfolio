@@ -107,7 +107,7 @@ export const Main = () => {
 
         <div className={styles.wrapImage}>
           <div className={styles.imgHover}>
-            <img src={myPhoto} className={styles.img} alt="" />
+            <img src={myPhoto} className={styles.img} alt="myPhoto" />
           </div>
         </div>
       </div>
