@@ -6,6 +6,7 @@ import blog from "./../../assets/img/2021-09-15-11_25_49-on-les.webp";
 import social from "./../../assets/img/2021-09-03-23_48_32-Grem.webp";
 import weather from "./../../assets/img/2021-10-17-19_04_17-React-App.webp";
 import anki from "./../../assets/img/2021-10-06-21_25_48-React-App.webp";
+import reading from "./../../assets/img/reading.webp";
 import { Fade } from "react-awesome-reveal";
 
 export const WorksSection = () => {
@@ -36,12 +37,23 @@ export const WorksSection = () => {
             ghLink="https://github.com/Humai88/weather-app"
             webLink="https://humai88.github.io/weather-app/"
           />
+        </Fade>
+      </div>
+      <div className={styles.container} style={{ marginTop: "-2rem" }}>
+        <Fade duration={2000}>
           <Work
             title="Anki Cards"
             text="A website for study of selected subject via flashcards. I built it using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, and Typescript. "
             imgSrc={anki}
-            ghLink="https://github.com/Humai88/friday"
+            ghLink="https://humai88.github.io/reading-trainer/"
             webLink="https://humai88.github.io/friday"
+          />
+          <Work
+            title="Reading Simulator"
+            text="A small project I created using React and TypeScript. This programme allows to train children's reading skills. You can make words from letters, also you can add some notes/marks as it has a drawing mode. For PC screens only (not for mobiles/touch screens)"
+            imgSrc={reading}
+            ghLink="https://github.com/Humai88/reading-trainer"
+            webLink="https://humai88.github.io/reading-trainer/"
           />
           <Work
             title="Social Network"
