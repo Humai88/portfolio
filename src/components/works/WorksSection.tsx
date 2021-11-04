@@ -1,7 +1,7 @@
 import React from "react";
 import { Work } from "./Work";
 import styles from "./WorksSection.module.scss";
-import todo from "./../../assets/img/2021-09-03-18_52_24-Todolist.webp";
+import todo from "./../../assets/img/2021-11-03-23_47_19-Todolist.webp";
 import blog from "./../../assets/img/2021-09-15-11_25_49-on-les.webp";
 import social from "./../../assets/img/2021-09-03-23_48_32-Grem.webp";
 import weather from "./../../assets/img/2021-10-17-19_04_17-React-App.webp";
