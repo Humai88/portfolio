@@ -10,6 +10,7 @@ import { useState } from "react";
 export const ContactForm = () => {
   const [toggleSending, setToggleSending] = useState(false);
   const [succesSending, setSuccessSending] = useState(false);
+
   return (
     <>
       <Formik
@@ -38,6 +39,12 @@ export const ContactForm = () => {
             .then(() => {
               setToggleSending(false);
               setSuccessSending(true);
+              setTimeout(() => {
+                setSuccessSending(false);
+              }, 2500);
+            })
+            .catch((err) => {
+              console.log(err);
             });
         }}
       >

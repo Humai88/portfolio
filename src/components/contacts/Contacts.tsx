@@ -1,7 +1,6 @@
 import React from "react";
 import { ContactForm } from "./Form";
 import styles from "./Contacts.module.scss";
-import Button from "../../UI/Button/Button";
 
 export const Contacts = () => {
   return (
