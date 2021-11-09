@@ -45,7 +45,7 @@ export const WorksSection = () => {
             title="Anki Cards"
             text="A website for study of selected subject via flashcards. I built it using React (functional components, Hooks), Redux (Redux Thunk), React-Redux, REST Api (fetching, displaying and posting data), TypeScript, Axios, and Typescript. "
             imgSrc={anki}
-            ghLink="https://humai88.github.io/reading-trainer/"
+            ghLink="https://github.com/Humai88/friday"
             webLink="https://humai88.github.io/friday"
           />
           <Work
