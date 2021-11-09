@@ -33,6 +33,11 @@
       background: linear-gradient(145deg, #2b2b2b, #333333);
       box-shadow: 5px 5px 6px #262626, -5px -5px 6px #3a3a3a;
     }
+    &[disabled]:hover {
+      box-shadow: inset 5px 5px 6px #262626, inset -5px -5px 6px #3a3a3a;
+      opacity: 0.7;
+      cursor: auto;
+    }
     &:active {
       box-shadow: inset 5px 5px 6px #262626, inset -5px -5px 6px #3a3a3a;
     }
